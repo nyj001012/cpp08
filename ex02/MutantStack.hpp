@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   MutantStack.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yena <yena@student.42seoul.kr>             +#+  +:+       +#+        */
+/*   By: yena <yena@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 16:50:50 by yena              #+#    #+#             */
-/*   Updated: 2023/10/14 17:09:27 by yena             ###   ########.fr       */
+/*   Updated: 2023/10/19 14:49:02 by yena             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,16 +38,16 @@ class MutantStack : public std::stack<T> {
   iterator end() { return this->c.end(); }
 
   typedef typename MutantStack<T>::stack::container_type::const_iterator const_iterator;
-  const_iterator begin() const { return this->c.begin(); }
-  const_iterator end() const { return this->c.end(); }
+  const_iterator cbegin() const { return this->c.begin(); }
+  const_iterator cend() const { return this->c.end(); }
 
   typedef typename MutantStack<T>::stack::container_type::reverse_iterator reverse_iterator;
   reverse_iterator rbegin() { return this->c.rbegin(); }
   reverse_iterator rend() { return this->c.rend(); }
 
   typedef typename MutantStack<T>::stack::container_type::const_reverse_iterator const_reverse_iterator;
-  const_reverse_iterator rbegin() const { return this->c.rbegin(); }
-  const_reverse_iterator rend() const { return this->c.rend(); }
+  const_reverse_iterator crbegin() const { return this->c.rbegin(); }
+  const_reverse_iterator crend() const { return this->c.rend(); }
 };
 
 #endif //EX02__MUTANTSTACK_HPP_
