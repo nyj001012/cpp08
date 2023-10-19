@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Span.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yena <yena@student.42seoul.kr>             +#+  +:+       +#+        */
+/*   By: yena <yena@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 15:28:24 by yena              #+#    #+#             */
-/*   Updated: 2023/10/14 16:44:11 by yena             ###   ########.fr       */
+/*   Updated: 2023/10/19 13:49:29 by yena             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@
 #define EX01__SPAN_HPP_
 
 #include <iostream>
+#include <vector>
+
 #include "font.hpp"
 
 class Span {
@@ -40,4 +42,4 @@ class Span {
 
 std::ostream &operator<<(std::ostream &os, const Span &span);
 
-#endif //EX01__SPAN_HPP_
+#endif  // EX01__SPAN_HPP_
