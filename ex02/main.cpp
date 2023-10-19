@@ -3,21 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yena <yena@student.42seoul.kr>             +#+  +:+       +#+        */
+/*   By: yena <yena@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 16:49:49 by yena              #+#    #+#             */
-/*   Updated: 2023/10/14 17:16:33 by yena             ###   ########.fr       */
+/*   Updated: 2023/10/19 13:57:14 by yena             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <list>
+
 #include "MutantStack.hpp"
 #include "font.hpp"
-#include <list>
 
 int main() {
   std::cout << F_GREEN
             << "----------------------- STACK -----------------------"
-            << std::endl;
+            << FB_DEFAULT << std::endl;
   MutantStack<int> mstack;
   mstack.push(5);
   mstack.push(17);
@@ -36,10 +37,12 @@ int main() {
     std::cout << *it << std::endl;
     ++it;
   }
+  std::cout << std::endl;
+
   std::stack<int> s(mstack);
   std::cout << F_GREEN
             << "----------------------- LIST ------------------------"
-            << std::endl;
+            << FB_DEFAULT << std::endl;
   std::list<int> list;
   list.push_back(5);
   list.push_back(17);
