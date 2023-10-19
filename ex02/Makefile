@@ -1,4 +1,4 @@
-NAME = ex02
+NAME = mutant_stack
 SRCS = main.cpp
 OBJS = ${SRCS:.cpp=.o}
 
